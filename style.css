@@ -130,6 +130,17 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   font-weight: 500;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-grid li i {
+  font-size: 2.5rem;
+  color: #2563eb;
+  transition: 0.3s;
 }
 
 .skills-grid li:hover {
@@ -137,6 +148,10 @@ h2 {
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+.skills-grid li:hover i {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
 /* Projects */
 .projects-grid {
   display: grid;
@@ -359,4 +374,5 @@ footer {
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
 
